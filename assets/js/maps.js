@@ -134,7 +134,8 @@ function initMap() {
         var marker = new google.maps.Marker({
             position: props.coords,
             map: map,
-            iconImage: props.iconImage
+            iconImage: props.iconImage,
+            content: props.content
         });
 
         // Check for separate icon for this marker (see if iconImage exists)
@@ -143,7 +144,9 @@ function initMap() {
             marker.setIcon(props.iconImage);
         }
 
+        // Check for Content for "tool-tip"
         if (props.content) {
+            // Set Content for each Marker
             var infoWindow = new google.maps.InfoWindow({
                 content: props.content
             });
