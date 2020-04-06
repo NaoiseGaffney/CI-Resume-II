@@ -1,7 +1,3 @@
-# Interactive Frontend Development Mini-Project
-
-## Maps.JS - adding Google Map, Markers, InfoWindows, and an IconImage for Dublin, Ireland.
-`````
 /** Single Map Marker and infoWindow */
 
 /* === First attempt: based on Google Maps example, as I can't get the Code Institute example to work properly. :-(
@@ -162,4 +158,3 @@ function initMap() {
         }
     }
 }
-````
